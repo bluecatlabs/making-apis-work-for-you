@@ -24,13 +24,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 '''
 
-import getpass, requests, json
+import requests, json, getpass
 
-#Parameters
-BAMAddress="bam.lab.corp"
-mainurl = "http://"+BAMAddress+"/Services/REST/v1/"
-account="api"
-account_password=getpass.getpass("Enter Password: ")
+#main variables
+user = "api"
+password = getpass.getpass("Enter password: ")
+bamurl = "bam.lab.corp"
+mainurl = "https://"+bamurl+"/Services/REST/v1/"
+bamcert = "bam.crt"
 
 # Add DHCP reservation for client
 mac_address="BB:CC:DD:AA:AA:AA"
@@ -75,7 +76,7 @@ assignNextAvailableIP4Addressparams = {
                                         }
 
 # login to BAM
-response = requests.get(loginurl, params=loginparam)
+response = requests.get(loginurl, params=loginparam, verify=bamcert)
 # process the token
 token = str(response.json())
 token = token.split()[2]+" "+token.split()[3]
@@ -85,7 +86,8 @@ header={'Authorization':token,'Content-Type':'application/json'}
 response = requests.get(
                             getEntityByNameurl,
                             params=getEntityByNameparams,
-                            headers=header
+                            headers=header,
+                            verify=bamcert
                             )
 configinfo = response.json()
 # set the valie of containerId for getIPRangedByIPparams to config id
@@ -94,7 +96,8 @@ getIPRangedByIPparams["containerId"] = configinfo['id']
 response = requests.get(
                             getIPRangedByIPurl,
                             params=getIPRangedByIPparams,
-                            headers=header
+                            headers=header,
+                            verify=bamcert
                             )
 networkinfo = response.json()
 
@@ -106,7 +109,8 @@ getEntityByNameparams["type"] = "View"
 response = requests.get(
                         getEntityByNameurl,
                         params=getEntityByNameparams,
-                        headers=header
+                        headers=header,
+                        verify=bamcert
                         )
 viewinfo = response.json()
 
@@ -119,10 +123,11 @@ assignNextAvailableIP4Addressparams['configurationId'] = configinfo['id']
 response = requests.post(
                             assignNextAvailableIP4Addressurl,
                             params=assignNextAvailableIP4Addressparams,
-                            headers=header
+                            headers=header,
+                            verify=bamcert
                             )
 print(response.json())
 
 # logout of api session
-response = requests.get(logouturl,headers=header)
+response = requests.get(logouturl,headers=header,verify=bamcert)
 print(response.json())

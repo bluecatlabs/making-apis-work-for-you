@@ -29,7 +29,10 @@ import requests, json, getpass, csv, os
 user = "api"
 password = getpass.getpass("Enter Password: ")
 bamurl = "bam.lab.corp"
-mainurl = "http://"+bamurl+"/Services/REST/v1/"
+mainurl = "https://"+bamurl+"/Services/REST/v1/"
+bamcert = "bam.crt"
+s = requests.Session()
+s.verify = bamcert
 # methods url
 # Login method
 # http://bam.lab.corp/Services/REST/v1/login?username=api&password=pass

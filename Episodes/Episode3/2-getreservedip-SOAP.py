@@ -24,15 +24,17 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 '''
-
+from getpass import getpass
+from requests import Session
+from zeep.transports import Transport
 from zeep import Client
 import csv, os
 
 #Parameters
 BAMAddress="bam.lab.corp"
-url="http://"+BAMAddress+"/Services/API?wsdl"
+url="https://"+BAMAddress+"/Services/API?wsdl"
 account="api"
-account_password="pass"
+account_password=getpass("Enter Password: ")
 
 def printEntity(apientity):
     '''
@@ -51,8 +53,12 @@ def printEntity(apientity):
             print(key+"="+str(apientity[key]))
 
 
-#api session
-client = Client(url)
+# get the HTTPS session verified
+websession = Session()
+# refer to certificate file path
+websession.verify = "bam.crt"
+webtransport=Transport(session=websession)
+client = Client(url, transport=webtransport)
 
 #login to api session
 client.service.login(account,account_password)

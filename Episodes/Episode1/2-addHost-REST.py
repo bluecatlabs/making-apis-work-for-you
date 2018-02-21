@@ -27,9 +27,16 @@ limitations under the License.
 import requests, json
 
 # Parameters
-account="api"
-account_password="pass"
+#main variables
+user = "api"
+# saving passwords in scripts is unsecure see episode 2 on how to secure your
+# passwords. see link
+password = "pass"
 bamurl = "bam.lab.corp"
+
+# we are using unsecure http example, for secure https connection with BAM see
+# episode 2 on how to verify SSL connection.
+# see link
 mainurl = "http://"+bamurl+"/Services/REST/v1/"
 
 # Server information

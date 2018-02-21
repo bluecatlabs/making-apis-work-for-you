@@ -28,8 +28,13 @@ from suds.client import Client
 
 #Parameters
 BAMAddress="bam.lab.corp"
+# we are using unsecure http example, for secure https connection with BAM see
+# episode 2 on how to verify SSL connection.
+# see link
 url="http://"+BAMAddress+"/Services/API?wsdl"
 account="api"
+# saving passwords in scripts is unsecure see episode 2 on how to secure your
+# passwords. see link
 account_password="pass"
 
 #api session

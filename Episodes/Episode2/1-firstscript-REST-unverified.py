@@ -29,6 +29,8 @@ import requests, json
 user = "api"
 password = "pass"
 bamurl = "bam.lab.corp"
+# SSL is unverified in this script see 1-firstscript-REST.py in this dir for
+# example on how to make sure ssl certificate is verified.
 mainurl = "http://"+bamurl+"/Services/REST/v1/"
 # methods url
 # Login method

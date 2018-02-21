@@ -25,18 +25,24 @@ limitations under the License.
 '''
 
 from zeep import Client
-import getpass
+from requests import Session
+from zeep.transports import Transport
+from getpass import getpass
 
 #Parameters
-BAMAddress="10.244.137.5"
-url="http://"+BAMAddress+"/Services/API?wsdl"
+BAMAddress="bam.lab.corp"
+url="https://"+BAMAddress+"/Services/API?wsdl"
 account="api"
-account_password=getpass.getpass("Enter Password: ")
+account_password=getpass("Enter Password: ")
 
 searchTerm="appsrv"
 
-#api session
-client = Client(url)
+# get the HTTPS session verified
+websession = Session()
+# refer to certificate file path
+websession.verify = "bam.crt"
+webtransport=Transport(session=websession)
+client = Client(url, transport=webtransport)
 
 #login to api session
 client.service.login(account,account_password)
