@@ -65,7 +65,7 @@ replaceparams={
                 "hostName":servername+".lab.corp",
                 "password":"bluecat",
                 "upgrade":False,
-                "properties":"resetServices=true"}
+                "properties":"resetServices=true|"}
 # update server
 updateurl = mainurl+"update?"
 
@@ -161,14 +161,14 @@ bdds1interface = response.json()[0]
 
 # replace server Parameters
 replaceparams['serverId'] = serverinfo['id']
-replaceparams['defaultInterface'] = bdds1interface['id']
+replaceparams['defaultInterface'] = bdds1newip
 servicesIPv4Address = "servicesIPv4Address="+bdds1newip+"|"
 servicesIPv4Netmask = "servicesIPv4Netmask="+bdds1netmask+"|"
 replaceparams['properties'] = replaceparams['properties']+servicesIPv4Address+servicesIPv4Netmask
 
 response = requests.put(
                         replaceurl,
-                        json=replaceparams,
+                        params=replaceparams,
                         headers=header
                         )
 print(response.text)
@@ -178,7 +178,7 @@ reponse = requests.post(
                         params=deployparams,
                         headers=header
                         )
-print(response.json())
+print(response.text)
 import time
 time.sleep(5)
 # logout from BAM
