@@ -23,7 +23,6 @@ limitations under the License.
 
 from zeep import Client
 from getpass import getpass
-import argparse
 
 #Parameters
 BAMAddress="bam.lab.corp"
@@ -35,7 +34,7 @@ account_password=getpass("Enter Password: ")
 1. Create the next available /22 Block
 2. Create the 2 next available /24 Networks
 3. Create the 2 next available /25 Networks
-4. Add 2 BDDS
+4. Add 2 BDDS 20
 5. Add DNS and DHCP roles to the network with the 2 BDDS
 """
 configname="main"
@@ -77,6 +76,8 @@ block_22.properties = "locationInherited=false|locationCode="+locationcode+"|"
 client.service.update(block_22)
 # check if updated was completed
 block_22 = client.service.getEntityById(block_22.id)
+
+print(block_22)
 # Get first 2 available /24 networks for wired and wireless devices
 network_24 = client.service.getNextAvailableIPRanges(
                         block_22.id,
@@ -85,6 +86,8 @@ network_24 = client.service.getNextAvailableIPRanges(
                         2,
                         "reuseExsting=False|isLargerAllowed=False|autoCreate=False|"
                             )
+
+print(network_24)
 # update the names of the
 network_24[0].name = locationname+"_Wired"
 network_24[1].name = locationname+"_Wireless"
@@ -92,6 +95,7 @@ network_24[1].name = locationname+"_Wireless"
 # send update to BAM
 for network in network_24:
     client.service.update(network)
+
 
 # verify the networks have the correct details
 for network in network_24:
