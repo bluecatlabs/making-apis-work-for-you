@@ -25,7 +25,7 @@ Here is the current list of webinars in this webinar series:
 - Episode 1: Jump start to BAM API - [[Customer Link ](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-you-Episode-1)] [[Non-Customer Link](https://www.bluecatnetworks.com/resource-library/making-apis-work-for-you/)]
 - Episode 2: Working Through Your IP Space - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-Webinar-Making-APIs-Work-for-You-Episode-2)] [[Non-Customer Link](https://www.bluecatnetworks.com/resource-library-making-apis-work-for-you-part-2/)]
 - Episode 3: Searching Enterprise DNS - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-Webinar-Making-APIs-Work-for-You-Episode-3)] [[Non-Customer Link](https://www.bluecatnetworks.com/making-apis-work-for-you-part-3/)]
-- Episode 4: DDS Server Management - Recap will be available shortly
+- Episode 4: DDS Server Management - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-You-Episode-4)][[Non-Customer Link](https://www.bluecatnetworks.com/making-apis-work-for-you-part-4/)]
 
 ## Credits
 
