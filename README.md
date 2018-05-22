@@ -22,11 +22,11 @@ To execute the script, run `python 1-scriptname.py`
 You can view all the previous webinars on the [BlueCat Customer Care Portal](https://care.bluecatnetworks.com/s/topic/0TO1W000000I2QKWA0/bluecat-webinars?tabset-5657e=2)
 
 Here is the current list of webinars in this webinar series:
-- Episode 1: Jump start to BAM API - [[Customer Link ](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-you-Episode-1)] [[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-for-part-1/)][[Code](/Episodes/Episode1)]
-- Episode 2: Working Through Your IP Space - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-Webinar-Making-APIs-Work-for-You-Episode-2)] [[Non-Customer Link](https://www.bluecatnetworks.com/resource/resource-library-making-apis-work-for-part-2/)][[Code](/Episodes/Episode2)]
-- Episode 3: Searching Enterprise DNS - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-Webinar-Making-APIs-Work-for-You-Episode-3)] [[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-for-you-part-3/)][[Code](/Episodes/Episode3)]
-- Episode 4: BDDS Server Management - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-You-Episode-4)][[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-for-part-4/)][[Code](/Episodes/Episode4)]
-- Episode 5: User Security Management - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-You-Episode-5)][[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-for-part-5/)][[Code](/Episodes/Episode5)]
+- Episode 1: Jump start to BAM API - [[Customer Link ](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-you-Episode-1)] [[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-part-1/)][[Code](/Episodes/Episode1)]
+- Episode 2: Working Through Your IP Space - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-Webinar-Making-APIs-Work-for-You-Episode-2)] [[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-part-2/)][[Code](/Episodes/Episode2)]
+- Episode 3: Searching Enterprise DNS - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-Webinar-Making-APIs-Work-for-You-Episode-3)] [[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-part-3/)][[Code](/Episodes/Episode3)]
+- Episode 4: BDDS Server Management - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-You-Episode-4)][[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-part-4/)][[Code](/Episodes/Episode4)]
+- Episode 5: User Security Management - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-You-Episode-5)][[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-part-5/)][[Code](/Episodes/Episode5)]
 - Episode 6: Advanced BAM Reporting - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-You-Episode-6)][[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-for-you-part-6/)][[Code](/Episodes/Episode6)]
 
 ## Credits
