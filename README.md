@@ -28,6 +28,8 @@ Here is the current list of webinars in this webinar series:
 - Episode 4: BDDS Server Management - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-You-Episode-4)][[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-part-4/)][[Code](/Episodes/Episode4)]
 - Episode 5: User Security Management - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-You-Episode-5)][[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-part-5/)][[Code](/Episodes/Episode5)]
 - Episode 6: Advanced BAM Reporting - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-webinar-Making-APIs-Work-for-You-Episode-6)][[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-for-you-part-6/)][[Code](/Episodes/Episode6)]
+- Episode 7: Deploying your Configuration - [[Customer Link](https://care.bluecatnetworks.com/s/article/User-Group-Webinar-Making-APIs-Work-for-You-Episode-7)][[Non-Customer Link](https://www.bluecatnetworks.com/resource/making-apis-work-for-you-part-7/)][[Code](/Episodes/Episode7)]
+
 
 ## Credits
 
